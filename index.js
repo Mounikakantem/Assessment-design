@@ -1,100 +1,101 @@
-var nameel=document.getElementById("name");
-var emailel=document.getElementById("email");
-var mobileel=document.getElementById("mobile");
+let fnameEle = document.getElementById("name")
+let emailEle = document.getElementById("email")
+let mobileEle = document.getElementById("mobile")
+let cityEle = document.getElementById("city")
 
-var nameerrorel=document.getElementById("nameerror");
-var emailerrorel=document.getElementById("emailerror");
-var naumerrel=document.getElementById("moberror");
+let fnameErrorEle = document.getElementById("nameerror")
+let emailErrorEle = document.getElementById("emailerror")
+let mobileErrorEle = document.getElementById("moberror")
+let cityErrorEle = document.getElementById("cityerror")
 
+let submitBtnEle = document.getElementById("submit-btn")
 
+let successMessageEle = document.getElementById("success-message")
 
-
-
-
-const swiper = new Swiper('.swiper', {
-    autoplay:{
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-    }, 
-    navigation: {
-      nextEl: '.fa-angle-left',
-      prevEl: '.fa-angle-right',
-    },
-  
-  });
-
-  function  name_vaidate(){
-    nameel.textContent="";
-    let name_value = nameel.value;
-    let regular = new RegExp("^[A-Za-z]*$");
-
-    if (name_value==""){
-        nameerrorel.textContent="This field should not be Empty";
-        nameerrorel.classList.add("errmsg");
-        nameel.classList.add("border_color");
-        return false;
-    }
-    else if (regular.test(name_value)==false){
-        nameerrorel.textContent="Name should be in the alpabets only"
-        nameerrorel.classList.add("border_color");
-        nameerrorel.classList.add("errmsg");
-        return false;
-    }
-    else{
-        nameerrorel.textContent="";
-        nameerrorel.style.border = "none";
-        return true;
+function name_vaidate() {
+    var regexp = /^[a-zA-Z ]{2,50}$/;
+    if (fnameEle.value === "") {
+        fnameErrorEle.textContent = "*this field is required"
+        fnameEle.style.border = "1px solid red"
+        return false
+    }else if (!regexp.test(fnameEle.value)){
+        fnameErrorEle.textContent = "*please enter valid name"
+        fnameEle.style.border = "1px solid red"
+        return false
+    } else {
+        fnameErrorEle.textContent = ""
+        fnameEle.style.border = "1px solid #F7F5F2"
+        return true
     }
 }
 
-function email_validate(){
-    emailel.textContent=""
-    let email = emailel.value;
-    let reg=email.substring(email.indexOf('@')+1);
+function email_validate() { 
+    let index = emailEle.value.indexOf("@")
+    if (emailEle.value == "") {
+        emailErrorEle.textContent = "*this field is required"
+        emailEle.style.border = "1px solid red"
+        return false
+    }else if(index==-1) {
+        emailErrorEle.textContent = "*please enter valid email"
+        emailEle.style.border = "1px solid red"
+        return false
+    }else {
+        emailErrorEle.textContent = ""
+        emailEle.style.border = "1px solid #F7F5F2"
+        return true
 
-    if (email == '') {
-        emailerrorel.textContent = "This field is  required";
-        emailerrorel.classList.add("errmsg")
-        emailerrorel.classList.add("border_color");
-        // emailNode.style.border = border1;
-        return false;
-    }else if(!email.includes("@")|| reg=='') {
-       emailerrorel.textContent = "Please put valid email";
-       emailerrorel.classList.add("errmsg");
-       return false;
     }
-    else {
-        emailerrorel.textContent="";
-        return true;
-} 
 }
 
-function mobile_validate() {
-    let mobileel1 = mobileel.value;
-    let reg_1=new RegExp("^[0-9]*$");
-    mobileel1.textContent="";
-
-    if ( mobileel1 == '') {
-        naumerrel.textContent = "This field is required";
-        naumerrel.classList.add("errmsg");
-        naumerrel.classList.add("border_color");
-        return false;
-    }else if(reg_1.test(mobile)==false){
-        naumerrel.textContent = "It Should Contain Only Digits";
-        naumerrel.classList.add("errmsg");
-        return false;
+function  mobile_validate() {
+    let regexp = /^[6-9][0-9]{9}$/
+    if (mobileEle.value === "") {
+        mobileErrorEle.textContent = "*this field is required"
+        mobileEle.style.border = "1px solid red"
+        return false
+    }else if (!regexp.test(mobileEle.value)) {
+        mobileErrorEle.textContent = "*please enter valid number, number starts with 6-9 and having 10 digits"
+        mobileEle.style.border = "1px solid red"
+        return false
+    }else {
+        mobileErrorEle.textContent = ""
+        mobileEle.style.border = "1px solid #F7F5F2"
+        return true
     }
-    else {
-        naumerrel.textContent=""
-        return true;
-} 
 }
 
-function submit_form(){
-    return name_vaidate() && email_validate() && mobile_validate();
+function city_validate() {
+    if (cityEle.value === "") {
+        cityErrorEle.textContent = "*this field is required"
+        cityEle.style.border = "1px solid red"
+        return false
+    }else {
+        cityErrorEle.textContent = ""
+        cityEle.style.border = "1px solid #F7F5F2"
+        return true
+    }
+}
 
+function successMessage() {
+    successMessageEle.textContent = "Form submitted successfully"
+    setTimeout(function() {
+        successMessageEle.textContent = ""
+    }, 2000)
+}
+function validation() {
+    let v1 = name_vaidate()
+    let v2 =  email_vaidate()
+    let v3 = mobile_validate()
+    let v4 = city_validate()
+
+    console.log(v1 & v2 & v3 & v4);
+    if (v1 & v2 & v3 & v4) {
+        fnameEle.value = ""
+        emailEle.value = ""
+        mobileEle.value = ""
+        cityEle.value = ""
+        successMessage()
+    }
+
+    return v1 & v2 & v3 & v4
 }
