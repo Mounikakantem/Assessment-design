@@ -17,9 +17,7 @@ body,html{
     font-family: "open sans";
 }
 
-.btn {
-   text-align:center; 
-}
+
 .bg_image{
     background-image: url(bg-image.png);
     background-size: cover;
@@ -532,4 +530,8 @@ input{
         font-size: 14px;
     }
     
+}
+
+.btn {
+    text-align:center
 }
