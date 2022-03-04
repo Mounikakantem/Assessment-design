@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        
+            <div class="bg_img_header">
+                <img src="Header.png" alt="style" class="img_p">
+            </div>
+            </header>
+            <section class="bg_image">
+            <section class="flex_1">
+                <div class="form_container">
+                    <h5 class="get_heading">GET YOUR HOME STYLED BY STYLE EXPERTS TO CREATE STUNNING ROOMS YOU'LL LOVE</h5>
+                    <form action="welcome.html" onsubmit="return submit_form()" novalidate>
+                        <div>
+                            <label for="name" class="input_heading">Full Name*</label><br>
+                            <input type="text" id="name" onblur="name_vaidate()">
+                            <p id="nameerror"></p>
+                        </div>
+                        <div>
+                            <label for="email" class="input_heading">Email Id*</label><br>
+                            <input type="email" id="email" onblur="email_validate()">
+                            <p id="emailerror"></p>
+                        </div>
+                        <div>
+                            <label for="mobile" class="input_heading">Mobile*</label><br>
+                            <input type="text" id="mobile" onblur="mobile_validate()">
+                            <p id="moberror"></p>
+                        </div>
+                        <div>
+                            <label for="city" class="label">City*</label><br>
+                            <select name="city" id="city" class="sele">
+                                <option value="Vizag">Hyderabad</option>
+                                <option value="Hyderabad">Mumbai</option>
+                                <option value="Pune">Hyderabad</option>
+                                <option value="Mumbai">Pune</option>
+                                <option value="Nagpur">Chennai</option>
+                            </select>
+                        </div>
+                        <input type="checkbox" class="check"> <span class="cheakhead">Yes, I would like to get important
+                            updates on </span><b>whatt's app</b><br>
+
+                    </form>
+                    <div style="text-align: center;">
+                        <button class="button_1">SUBMIT</button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <!----------------------------section2------------------------------------->
+        <section class="section-2">
+            <h4 class="section-2-heading">HOW IT WORKS</h4>
+            <section class="flex-parts">
+                <div class="part">
+                    <p class="integer">01</p>
+                    <p class="heading-text">TELL US ABOUT YOUR STYLE</p>
+                    <p class="description-text">Talk to our designer so that we know more about your style</p>
+                </div>
+                <hr class="horizontal-line">
+                <div class="part">
+                    <p class="integer">02</p>
+                    <p class="heading-text">LET'S MEET</p>
+                    <p class="description-text">Book an appointment to meet a D'Decor style consultant</p>
+                </div>
+                <hr class="horizontal-line">
+                <div class="part">
+                    <p class="integer">03</p>
+                    <p class="heading-text">CREATE AND COMPLETE</p>
+                    <p class="description-text">Wash your dream home come alive</p>
+                </div>
+            </section>
+        </section>
+    <!---------------------------->
+    
+       
+        <!---------------------------->
+        <section class="arrow">
+            <h2 class="test_head">DECOR CONCEPTS</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cot">
+
+                        <i class="fa-solid fa-angle-left"></i>
+                        <div>
+                            <h4 class="dec_head">COASTAL</h4>
+                            <p class="brea_head">Breathe, be free live in the colours of sun and sea. lighter colours
+                                and textured fabrics for a smooth. </p>
+                        </div>
+                        <div class="house">
+                            <img src="section-3.png" alt="house"
+                                class="hos_img">
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="swiper-slide cot">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <div>
+                            <h4 class="dec_head">COASTAL</h4>
+                            <p class="breath_heading">Breathe, be free live in the colours of sun and sea. lighter colours
+                                and textured fabrics for a smooth. </p>
+                        </div>
+                        <div class="house">
+                            <img src="section-3.png" alt="house" class="cad_img hos_img">
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="swiper-slide cot">
+                        <div class="swiper-slide cot">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <div>
+                                <h4 class="dec_head">COASTAL</h4>
+                                <p class="brea_head">Breathe, be free live in the colours of sun and sea. lighter
+                                    colours
+                                    and textured fabrics for a smooth. </p>
+                            </div>
+                            <div class="house">
+                                <img src="section-3.png" alt="house" class="cad_img hos_img">
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+        </section>
+ <!--------------------------section4-------------------------->
+             <section class="testimonial-section">
+           <h5 class="testimonial-heading">TESTIMONIALS</h5>
+               <section class="container">
+                <div>
+                    <h3 class="sec4-heading">We are loving the mood. it is exactly what we wanted for our first house.</h3>
+                    <small class="name">SANDEEP SHAH </small> | <small class="name"> LIVING ROOM</small>
+                    <p class="nature-para">CLOSE TO NATURE : Green can create a calm heavan in your lounge, add a sense of
+                        prosparty in your home office, lend a
+                        nurturing vibe in your kitchen and revitalize you in the bedroom.
+                    </p>
+                </div>
+                <div>
+                    <img src="section-4-img1.png" alt="house" class="img_s">
+                </div>
+            </section>
+            <section class="container pad">
+                <div>
+                    <img src="section-4-img2.png" alt="house_1" class="img_s1">
+                </div>
+                <div>
+                    <h3 class="sec4-heading">A simple modern look was what i wanted for my space.</h3>
+                    <small class="name">EISKIRA KHALIFA </small> | <small class="name"> LIVING ROOM</small>
+                    <p class="nature-para-1">A HOME WAY FROM HOME : A imple mordern look was what i wanted for my space: i
+                        asked
+                        the stylist to help me create a calm and relaxing space which is i wanted for a long dayat work.
+                        keeping
+                        in mind that she curated mood boards espically for me and i loved it.
+                    </p>
+                </div>
+            </section>
+        </section>
+       <!------------------footer-------------->
+    <footer class="footer-section">
+        <div class="footer-img">
+            <img src="Footer-icon.png" alt="vector" class="images_1">
+        </div>
+        <small class="copy_right">COPYRIGHT 2019. ALL RIGHTS RESERVED</small>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
