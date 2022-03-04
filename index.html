@@ -24,11 +24,12 @@
         <div class="bg_img_header">
             <img src="Header.png" alt="style" class="img_header">
         </div>
+   
     <section class="bg_image">
         <section class="flex_1">
             <div class="form_container">
                 <h5 class="get_heading">GET YOUR HOME STYLED BY STYLE EXPERTS TO CREATE STUNNING ROOMS YOU'LL LOVE</h5>
-                <form action="welcome.html" onsubmit="return submit_form()" novalidate>
+                <form action="#0" onsubmit="return validation()" class="form">
                     <div>
                         <label for="name" class="input_heading">Full Name*</label><br>
                         <input type="text" id="name" onblur="name_vaidate()">
@@ -46,25 +47,28 @@
                     </div>
                     <div>
                         <label for="city" class="label">City*</label><br>
-                        <select name="city" id="city" class="selection">
+                        <select name="city" id="city" class="selection" onblur = "city_validate()">
                             <option value="Vizag">Hyderabad</option>
                             <option value="Hyderabad">Mumbai</option>
                             <option value="Pune">Hyderabad</option>
                             <option value="Mumbai">Pune</option>
                             <option value="Nagpur">Chennai</option>
-                        </select>
+                        </select> 
+                        <p id = "cityerror"></p>
                     </div>
                     <input type="checkbox" class="check-box"> <span class="Check-line">Yes, I would like to get important
                         updates on </span><b>WhatsApp</b><br>
 
                 </form>
-                <div class = "btn>
-                    <button class="button_1">SUBMIT</button>
+                <div class="btn">
+                    <button  id="submit-btn" class="button_1" type="submit">SUBMIT</button>
+                    <span class="success-message" id="success-message"></span>
                 </div>
             </div>
         </section>
-     </section>
-         </header>
+
+    </section>
+</header>
     <!----------------------------section2------------------------------------->
     <section class="section-2">
         <h4 class="section-2-heading">HOW IT WORKS</h4>
@@ -124,7 +128,8 @@
                         <div>
                             <h4 class="decor_heading">COASTAL</h4>
                             <p class="breath_heading">Breathe, be free live in the colours of sun and sea. lighter
-                                colours and textured fabrics for a smooth. </p>
+                                colours
+                                and textured fabrics for a smooth. </p>
                         </div>
                         <div class="house">
                             <img src="section-3.png" alt="house" class="hall_img">
@@ -144,8 +149,8 @@
             <div>
                 <h3 class="sec4-heading">We are loving the mood. it is exactly what we wanted for our first house.</h3>
                 <small class="name">SANDEEP SHAH </small> | <small class="name"> LIVING ROOM</small>
-                <p class="nature-para">CLOSE TO NATURE : Green can create a calm haven in your lounge, add a sense of
-                    prosperisty in your home office, lend a
+                <p class="nature-para">CLOSE TO NATURE : Green can create a calm heavan in your lounge, add a sense of
+                    prosparty in your home office, lend a
                     nurturing vibe in your kitchen and revitalize you in the bedroom.
                 </p>
             </div>
@@ -160,9 +165,11 @@
             <div>
                 <h3 class="sec4-heading">A simple modern look was what i wanted for my space.</h3>
                 <small class="name">EISKIRA KHALIFA </small> | <small class="name"> LIVING ROOM</small>
-                <p class="nature-para-1">A HOME WAY FROM HOME : A simple mordern look was what I wanted for my space: I
-                    asked my stylist to help me create a calm and relaxing space which is what I wanted for a long day at work.
-                    Keeping that in mind that she curated mood boards especially for me and  I absolutely loved it.
+                <p class="nature-para-1">A HOME WAY FROM HOME : A imple mordern look was what i wanted for my space: i
+                    asked
+                    the stylist to help me create a calm and relaxing space which is i wanted for a long dayat work.
+                    keeping
+                    in mind that she curated mood boards espically for me and i loved it.
                 </p>
             </div>
         </section>
