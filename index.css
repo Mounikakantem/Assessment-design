@@ -33,7 +33,7 @@ body,html{
     max-height:160px;
 
 }
-.sele{
+.seletion{
     background-color:#F7F5F2;
     border:0px;
     height:44px;
@@ -57,7 +57,7 @@ body,html{
     
 }
 
-.test_head {
+.test_heading {
     text-align: center;
     padding-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -85,7 +85,7 @@ input{
     padding:12px 0px 10px 0px;
     
 }
-.check{
+.check-box{
     height: 14px;
     width: 14px;
     margin-top: 26px;
@@ -209,14 +209,10 @@ input{
     width: 286px;
     padding-top: 32px;
 }
-.img_s{
+.sec4-img1{
     height: 562px;
     width: 704px;
 
-}
-.cad_img{
-    height: 390px;
-    width: 675px;
 }
 
 .nature-para-1{
@@ -227,7 +223,7 @@ input{
     width: 287px;
     padding-top: 32px;
 }
-.img_s1{
+.sec4-img2{
     height: 562px;
     width: 704px;
 }
@@ -249,7 +245,7 @@ input{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 }
-.dec_head{
+.decor_heading{
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -269,7 +265,7 @@ input{
     align-items: center;
     padding-bottom: 30px;
 }
-.arrow{
+.section-3{
     padding-top: 50px;
 }
 
@@ -323,19 +319,19 @@ input{
     border: 1px solid #707070;
     padding-bottom: 8px; 
 }
-.sele{
+.selection{
     background-color:#F7F5F2;
     border:1px solid #707070;
     height:18px;
     width:250px
 }
-.check{
+.check-box{
     height: 14px;
     width: 14px;
     margin-top: 16px;
     margin-bottom: 18px;
 }
-.cheakhead{
+.check-line{
     font-size: 8px;
 }
 .button_1{
@@ -368,12 +364,12 @@ input{
     align-items: center;
     
 }
-.img_s{
+.sec4-img1{
     height: 300px;
     width: 280px;
     padding-top: 5px;
 }
-.img_s1{
+.sec4-img2{
     height: 300px;
     width: 280px;
     padding-top: 5px;
@@ -382,11 +378,11 @@ input{
     height: 40px;
     width: 250px;
 }
-.dec_head{
+.decor_heading{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
     color: #707070;
+    font-weight: 400;
+    font-size: 16px;
 }
 .breath_heading{
     font-family: 'Open Sans', sans-serif;
@@ -402,7 +398,7 @@ input{
     padding-bottom: 20px;
    
 }
-.hos_img{
+.hall_img{
     height: 100px;
     width: 120px;
 }
@@ -465,7 +461,7 @@ input{
         border: 1px solid #707070;
         padding-bottom: 8px; 
     }
-    .sele{
+    .selection{
         background-color:#F7F5F2;
         border:1px solid #707070;
         height:18px;
@@ -480,7 +476,7 @@ input{
         font-weight: 300;
         color: #000000;
     }
-    .img_s{
+    .sec4-img1{
         height: 400px;
         width: 380px;
     }
@@ -502,15 +498,15 @@ input{
     .description-text{
         font-size: 10px;
     }
-    .img_s1{
+    .sec4-img2{
         height: 400px;
         width: 380px;
         
     }
-    .dec_head{
+    .decor_heading{
         font-family: 'Open Sans', sans-serif;
-        font-size: 26px;
-        font-weight: 400;
+        font-weight: 300;
+        font-size: 25px;
         color: #707070;
     }
     .breath_heading{
@@ -526,14 +522,12 @@ input{
         justify-content: space-around;
         align-items: center;
     }
-    .hos_img{
+    .hall_img{
         height: 300px;
         width: 350px;
     }
-    .cheakhead{
+    .check-line{
         font-size: 14px;
     }
     
 }
-
-
